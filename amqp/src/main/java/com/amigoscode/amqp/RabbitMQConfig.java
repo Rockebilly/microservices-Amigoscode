@@ -14,7 +14,7 @@ import org.springframework.context.annotation.Configuration;
 @AllArgsConstructor
 public class RabbitMQConfig {
 
-    String name = "Jong2TheStriker";
+    String name = "Jong2TheHealer";
 
     int x = 5;
 
