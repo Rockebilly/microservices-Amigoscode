@@ -15,6 +15,7 @@ import org.springframework.context.annotation.Configuration;
 public class RabbitMQConfig {
 
     String name = "Jong2TheHealer";
+    String country = "Philippines";
 
     int x = 5;
 
