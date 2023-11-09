@@ -16,6 +16,7 @@ public class RabbitMQConfig {
 
     String name = "Jong2TheHealer";
     String country = "Philippines";
+    int age = 43;
 
     int x = 5;
 
