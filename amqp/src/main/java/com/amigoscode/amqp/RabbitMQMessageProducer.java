@@ -10,6 +10,8 @@ import org.springframework.stereotype.Component;
 @AllArgsConstructor
 public class RabbitMQMessageProducer {
 
+    // sample comments
+
     private final AmqpTemplate amqpTemplate;
 
     public void publish(Object payload, String exchange, String routingKey) {
