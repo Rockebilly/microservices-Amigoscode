@@ -23,4 +23,17 @@ public class NotificationService {
                         .build()
         );
     }
+
+    public void buff() {
+
+    }
+
+    public boolean buff2() {
+        return false;
+    }
+
+    public boolean buff3() {
+        return false;
+    }
+
 }
