@@ -20,20 +20,20 @@ public class RabbitMQConfig {
 
     int x = 5;
 
-    private final ConnectionFactory connectionFactory;
-
     @Bean
     public AmqpTemplate amqpTemplate() {
-        RabbitTemplate rabbitTemplate = new RabbitTemplate(connectionFactory);
+        RabbitTemplate rabbitTemplate = new RabbitTemplate(ConnectionFactory);
         rabbitTemplate.setMessageConverter(jacksonConverter());
         return rabbitTemplate;
     }
+
+    private final ConnectionFactory ConnectionFactory;
 
     @Bean
     public SimpleRabbitListenerContainerFactory simpleRabbitListenerContainerFactory() {
         SimpleRabbitListenerContainerFactory factory =
                 new SimpleRabbitListenerContainerFactory();
-        factory.setConnectionFactory(connectionFactory);
+        factory.setConnectionFactory(ConnectionFactory);
         factory.setMessageConverter(jacksonConverter());
         return factory;
     }
@@ -43,6 +43,7 @@ public class RabbitMQConfig {
         MessageConverter jackson2JsonMessageConverter =
                 new Jackson2JsonMessageConverter();
         return jackson2JsonMessageConverter;
+
     }
 
 }
