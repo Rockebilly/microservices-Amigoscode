@@ -23,4 +23,10 @@ public class NotificationService {
                         .build()
         );
     }
+
+     public void rambo(){
+
+     }
+
+
 }
