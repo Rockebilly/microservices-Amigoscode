@@ -28,5 +28,7 @@ public class NotificationService {
 
      }
 
+     public void kiss(){
 
+     }
 }
